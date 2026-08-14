@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AtlasPro Dashboard</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="dashboard-shell">
+      <header class="topbar">
+        <div class="brand" aria-label="Brand logo and title">
+          <div class="logo">AP</div>
+          <div class="brand-copy">
+            <span class="eyebrow">Admin portal</span>
+            <h1>AtlasPro</h1>
+          </div>
+        </div>
+
+        <nav class="main-nav" aria-label="Main navigation">
+          <a href="#" class="active">Overview</a>
+          <a href="#">Analytics</a>
+          <a href="#">Projects</a>
+          <a href="#">Reports</a>
+          <a href="#">Settings</a>
+        </nav>
+
+        <div class="header-actions">
+          <button class="btn btn-secondary">Export</button>
+          <button class="btn btn-primary">New report</button>
+        </div>
+      </header>
+
+      <main class="dashboard">
+        <section class="welcome-card panel">
+          <div>
+            <p class="eyebrow muted">Good morning</p>
+            <h2>Operations dashboard</h2>
+            <p class="subtitle">Performance summary across your team, revenue and service health.</p>
+          </div>
+
+          <div class="status-pill">
+            <span class="status-dot"></span>
+            System healthy
+          </div>
+        </section>
+
+        <section class="metrics-grid" aria-label="Summary metrics">
+          <article class="metric-card blue">
+            <div class="metric-header">
+              <span>Total revenue</span>
+              <span class="trend up">+12.4%</span>
+            </div>
+            <h3>$84.2K</h3>
+            <p>Compared to last month</p>
+          </article>
+
+          <article class="metric-card purple">
+            <div class="metric-header">
+              <span>Active users</span>
+              <span class="trend up">+8.1%</span>
+            </div>
+            <h3>24.8K</h3>
+            <p>Engaged this week</p>
+          </article>
+
+          <article class="metric-card green">
+            <div class="metric-header">
+              <span>Conversion</span>
+              <span class="trend up">+3.2%</span>
+            </div>
+            <h3>6.4%</h3>
+            <p>Sales funnel efficiency</p>
+          </article>
+
+          <article class="metric-card orange">
+            <div class="metric-header">
+              <span>Support load</span>
+              <span class="trend down">-1.8%</span>
+            </div>
+            <h3>1,284</h3>
+            <p>Tickets resolved</p>
+          </article>
+        </section>
+
+        <section class="content-grid">
+          <div class="panel services-panel">
+            <div class="panel-header">
+              <h3>Core services</h3>
+              <a href="#">View all</a>
+            </div>
+
+            <div class="service-list">
+              <div class="service-item">
+                <div class="service-info">
+                  <span class="service-icon blue">S</span>
+                  <div>
+                    <h4>Sales automation</h4>
+                    <p>Pipeline optimization</p>
+                  </div>
+                </div>
+                <span class="tag success">Online</span>
+              </div>
+
+              <div class="service-item">
+                <div class="service-info">
+                  <span class="service-icon purple">C</span>
+                  <div>
+                    <h4>Customer success</h4>
+                    <p>Retention tracking</p>
+                  </div>
+                </div>
+                <span class="tag warning">Monitor</span>
+              </div>
+
+              <div class="service-item">
+                <div class="service-info">
+                  <span class="service-icon green">R</span>
+                  <div>
+                    <h4>Reporting engine</h4>
+                    <p>Data aggregation</p>
+                  </div>
+                </div>
+                <span class="tag neutral">Stable</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="panel chart-panel">
+            <div class="panel-header">
+              <h3>Performance overview</h3>
+              <span class="mini-label">This quarter</span>
+            </div>
+
+            <div class="chart-bars" aria-label="Bar chart">
+              <div class="bar-group"><span class="bar short" style="--value: 38%"></span><label>Jan</label></div>
+              <div class="bar-group"><span class="bar medium" style="--value: 56%"></span><label>Feb</label></div>
+              <div class="bar-group"><span class="bar tall" style="--value: 74%"></span><label>Mar</label></div>
+              <div class="bar-group"><span class="bar medium" style="--value: 62%"></span><label>Apr</label></div>
+              <div class="bar-group"><span class="bar tall" style="--value: 82%"></span><label>May</label></div>
+              <div class="bar-group"><span class="bar tallest" style="--value: 92%"></span><label>Jun</label></div>
+            </div>
+          </div>
+        </section>
+
+        <section class="bottom-grid">
+          <div class="panel activity-panel">
+            <div class="panel-header">
+              <h3>Recent activity</h3>
+              <a href="#">See details</a>
+            </div>
+
+            <ul class="activity-list">
+              <li>
+                <span class="circle blue"></span>
+                <div>
+                  <strong>New campaign launched</strong>
+                  <small>2 hours ago</small>
+                </div>
+              </li>
+              <li>
+                <span class="circle green"></span>
+                <div>
+                  <strong>Sales team hit target</strong>
+                  <small>Yesterday</small>
+                </div>
+              </li>
+              <li>
+                <span class="circle purple"></span>
+                <div>
+                  <strong>Monthly report exported</strong>
+                  <small>2 days ago</small>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <div class="panel team-panel">
+            <div class="panel-header">
+              <h3>Team workload</h3>
+              <span class="mini-label">7 members</span>
+            </div>
+
+            <div class="team-list">
+              <div class="team-row">
+                <div class="member-meta">
+                  <span class="avatar avatar-one">JD</span>
+                  <div>
+                    <strong>Jane Doe</strong>
+                    <small>Product</small>
+                  </div>
+                </div>
+                <div class="progress"><span style="width: 82%"></span></div>
+              </div>
+
+              <div class="team-row">
+                <div class="member-meta">
+                  <span class="avatar avatar-two">MK</span>
+                  <div>
+                    <strong>Mark King</strong>
+                    <small>Operations</small>
+                  </div>
+                </div>
+                <div class="progress"><span style="width: 68%"></span></div>
+              </div>
+
+              <div class="team-row">
+                <div class="member-meta">
+                  <span class="avatar avatar-three">AS</span>
+                  <div>
+                    <strong>Ana Smith</strong>
+                    <small>Marketing</small>
+                  </div>
+                </div>
+                <div class="progress"><span style="width: 91%"></span></div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>
+
